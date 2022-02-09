@@ -1,0 +1,13 @@
+# This is a basic workflow to help you get started with Actions
+
+name: change_a
+on:
+  push:
+    paths: ['a.txt']
+jobs:
+  change_a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo "change a.txt"
